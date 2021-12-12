@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="logo.png" alt="Spotify"></li>
+        </ul>
+        <ul>
+            <li class="login">
+                <div class="btn">
+                    <div class="btn-primary">LOGIN</div>
+                </div>
+            </li>
+            <li class="login">
+                <div class="btn">
+                    <div class="btn-primary">SIGN UP</div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="leftSideBar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Your Library</a></li>
+                <li><input type="search" placeholder="Search"></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="title">
+                    <h1>Best of world famous songs</h1>
+                </div>
+                <div class="songs">
+                    <ul>
+                        <li><img src="raatan.gif" alt="Error Loading"></li>
+                        <li>Raataan chill mix</li>
+                        <li id="time">3:50 <img id="s1" class="show" src="play-circle-solid.svg"><img id="h1"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="ranjha.jpg" alt="Error Loading"></li>
+                        <li>Ranjha</li>
+                        <li id="time">3:48 <img id="s2" class="show" src="play-circle-solid.svg"><img id="h2"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="pal.jpg" alt="Error Loading"></li>
+                        <li>Pal-ek pal</li>
+                        <li id="time">4:07 <img id="s3" class="show" src="play-circle-solid.svg"><img id="h3"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="raabata.jpg" alt="Error Loading"></li>
+                        <li>Raabata-Title track</li>
+                        <li id="time">4:56 <img id="s4" class="show" src="play-circle-solid.svg"><img id="h4"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="sakhiyan.jpg" alt="Error Loading"></li>
+                        <li>Sakhiyan 2.0</li>
+                        <li id="time">2:57 <img id="s5" class="show" src="play-circle-solid.svg"><img id="h5"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="burj.jpg" alt="Error Loading"></li>
+                        <li>Burj Khalifa</li>
+                        <li id="time">3:07 <img id="s6" class="show" src="play-circle-solid.svg"><img id="h6"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="o-saathi.jpg" alt="Error Loading"></li>
+                        <li>O Saathi</li>
+                        <li id="time">4:11 <img id="s7" class="show" src="play-circle-solid.svg"><img id="h7"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="besabriyan.jpg" alt="Error Loading"></li>
+                        <li>Besabriyan - MS-Dhoni</li>
+                        <li id="time">4:15 <img id="s8" class="show" src="play-circle-solid.svg"><img id="h8"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="param.jpg" alt="Error Loading"></li>
+                        <li>Param Sundari - Mini</li>
+                        <li id="time">3:20 <img id="s9" class="show" src="play-circle-solid.svg"><img id="h9"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="ram.jpg" alt="Error Loading"></li>
+                        <li>Bharat ka bachcha bachcha</li>
+                        <li id="time">5:45 <img id="s10" class="show" src="play-circle-solid.svg"><img id="h10"
+                                class="hidden" src="pause-circle-regular.svg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightSideBar">
+            <div class="btn">
+                <div class="btn-primary">Connect with Facebook</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <ul><input id="progressBar" type="range" name="range" value="0" min="0" max="100"></ul>
+        <ul class="icons">
+            <li id="backward"><img src="step-backward-solid.svg"></li>
+            <li id="play"><img src="play-circle-solid.svg"></li>
+            <li id="pause"><img src="pause-circle-regular.svg"></li>
+            <li id="forward"><img src="step-forward-solid.svg"></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* uitlity classes */
+
+.btn{
+    padding: 12px 56px;
+    margin: 12px;
+    border: 1px solid white;
+    border-radius: 34px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin: 0px 45px;
+}
+
+.logo img{
+    width: 54px;
+}
+
+.login{
+    cursor: pointer;
+}
+
+.login :hover{
+    transform: scale(1.1, 1.1);
+    transition: all 0.1s ease-in-out;
+}
+
+/* container */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    height: calc(100vh - 68px - 98px);
+}
+
+.leftSideBar{
+    background-color: rgb(38 38 38);
+}
+
+.leftSideBar li{
+    padding: 9px 9px;
+    margin: 4px 9px;
+}
+
+.leftSideBar input{
+    padding: 9px;
+    border-radius: 4px;
+}
+
+.leftSideBar a{
+    color: white;
+}
+
+.leftSideBar img{
+    width: 34px;
+}
+
+.content{
+    background: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    height: calc(100vh - 68px - 98px);
+}
+
+.box{
+    height: 96%;
+    margin: 23px;
+}
+
+.songs{
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.songs ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 14px 0px;
+}
+
+.songs ul li{
+    display: flex;
+    align-items: center;
+    margin: 0px 12px;
+}
+
+.songs ul li img{
+    width: 45px;
+    border-radius: 12px;
+}
+
+#time img{
+    width: 23px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.rightSideBar{
+    background-color: rgb(38 38 38);
+    color: white;
+}
+
+/* player */
+
+.player{
+    height: 98px;
+    background-color: rgb(105, 105, 105);
+}
+
+.player ul{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#progressBar{
+    width: 90vw;
+    height: 4px;
+    margin: 12px 0px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons li{
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.icons img{
+    width: 30px;
+}
+
+#pause{
+    display: none;
+}
